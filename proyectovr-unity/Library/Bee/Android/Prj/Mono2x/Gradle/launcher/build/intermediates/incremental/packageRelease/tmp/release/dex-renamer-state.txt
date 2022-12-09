@@ -1,0 +1,4 @@
+#Fri Dec 02 20:04:50 CET 2022
+base.0=/home/daniel/Workspace/Universidad/VR Y AR/Proyectos/Practica2/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
