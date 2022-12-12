@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 74a190182ed63c44c9cbaafc6a3ee6ab
+  - enabled: 1
+    path: Assets/Scenes/Boton puertav2.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/puerta llave con tag.unity
+    guid: a4716752fb2a77e2a81698c2bad8501e
+  - enabled: 1
+    path: Assets/Scenes/puerta llave sin tag.unity
+    guid: 397b9846b94036a41b2ea98a089bf10d
+  - enabled: 1
+    path: Assets/Scenes/puerta p1.unity
+    guid: b08089e4ae6ef6548b99760bedb99d2a
+  - enabled: 1
+    path: Assets/Scenes/raycast.unity
+    guid: 2b3310fa816ca3cf383a720200cbf62f
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c42de8596d8324d4ea95f27597e860ad, type: 2}
