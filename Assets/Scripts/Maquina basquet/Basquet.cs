@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Basquet : MonoBehaviour
 {
@@ -8,11 +9,16 @@ public class Basquet : MonoBehaviour
     private IEnumerator coroutine;
     public float targetTime = 60.0f;
     public bool openTrigger = false;
+    public TMPro.TextMeshProUGUI tiempoUI;
+    public TMPro.TextMeshProUGUI puntuacionUI;
  
 void Update(){
  
-Debug.Log("Tiempo: " + Mathf.RoundToInt( targetTime ));
-Debug.Log("Puntuación: " + puntuacion);
+string text1 = Mathf.RoundToInt( targetTime ).ToString();
+string text2 = puntuacion.ToString();
+
+tiempoUI.SetText(text1);
+puntuacionUI.SetText(text2);
  
 if(openTrigger){
     targetTime -= Time.deltaTime;
@@ -34,7 +40,8 @@ if(openTrigger){
  }
 
   void Start () {
-        
+        //tiempoUI = GameObject.Find("tiempo").GetComponent<TextMeshProUGUI> ();
+        //puntuacionUI = GameObject.Find("puntuacion").GetComponent<TextMeshProUGUI> ();
 }
 
     private void OnTriggerEnter(Collider other)
