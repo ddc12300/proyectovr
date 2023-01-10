@@ -12,22 +12,18 @@ public class Basquet : MonoBehaviour
     public TMP_Text tiempoUI;
     public TMP_Text puntuacionUI;
 
-    public string tiempo = "60";
-    public string puntuacionString = "0";
+    public string tiempo;
  
 void Update(){
 
-        //string text1 = Mathf.RoundToInt( targetTime ).ToString();
-        //string text2 = puntuacion.ToString();
-
-        //tiempoUI.SetText(text1);
-        //puntuacionUI.SetText(text2);
-
         tiempo = Mathf.RoundToInt(targetTime).ToString();
-        //print(Mathf.RoundToInt(targetTime));
+
+        tiempoUI.text = tiempo;
+
+        puntuacionUI.text = puntuacion.ToString();
 
 
-if (openTrigger){
+        if (openTrigger){
     targetTime -= Time.deltaTime;
 }
  
@@ -47,11 +43,9 @@ if (openTrigger){
  }
 
   void Start () {
-        //tiempoUI = GameObject.Find("tiempo").GetComponent<TextMeshProUGUI> ();
-        //puntuacionUI = GameObject.Find("puntuacion").GetComponent<TextMeshProUGUI> ();
-        tiempoUI.text = tiempo;
+        tiempoUI.text = Mathf.RoundToInt(targetTime).ToString();
 
-        puntuacionUI.text = puntuacionString;
+        puntuacionUI.text = puntuacion.ToString();
 }
 
     private void OnTriggerEnter(Collider other)
