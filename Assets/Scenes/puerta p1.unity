@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731689, g: 0.13414702, b: 0.1210784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1820,6 +1820,76 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0966a7644ae03be429727aafea92a06c, type: 3}
+--- !u!4 &175754783 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 644178849911773363, guid: 0966a7644ae03be429727aafea92a06c, type: 3}
+  m_PrefabInstance: {fileID: 175754782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &175754784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 644178849911773366, guid: 0966a7644ae03be429727aafea92a06c, type: 3}
+  m_PrefabInstance: {fileID: 175754782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &175754785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175754784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 175754783}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1001 &179438892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4941,7 +5011,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.14071141, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.56801116, y: 2.4693458, z: -5.292327}
+  m_ConnectedAnchor: {x: -0.56801105, y: 2.2722032, z: -5.292327}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -5318,7 +5388,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6e9598ba7ef14664e912b0025fcddc0a, type: 2}
     - target: {fileID: 919132149155446097, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_Name
-      value: NeonesArcadeproves (3)
+      value: ArcadeUABverd
       objectReference: {fileID: 0}
     - target: {fileID: 8699224783455019111, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13209,7 +13279,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6e9598ba7ef14664e912b0025fcddc0a, type: 2}
     - target: {fileID: 919132149155446097, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_Name
-      value: NeonesArcadeproves (2)
+      value: ArcadeUABrosa
       objectReference: {fileID: 0}
     - target: {fileID: 8699224783455019111, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16354,7 +16424,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.14071141, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 14.275481, y: 2.526377, z: 1.2204257}
+  m_ConnectedAnchor: {x: 21.122551, y: 1.5414279, z: 0.63515306}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -16952,6 +17022,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f2c45974edc0041904f3620a920ef4, type: 3}
+--- !u!1 &1932483610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1932483612}
+  - component: {fileID: 1932483611}
+  m_Layer: 7
+  m_Name: PP Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1932483611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932483610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 8f5d0969c80434643a55fc35d41bc500, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &1932483612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932483610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7439462, y: 2.5613465, z: -1.6892962}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1936789193
 GameObject:
   m_ObjectHideFlags: 0
@@ -18018,12 +18137,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6e9598ba7ef14664e912b0025fcddc0a, type: 2}
     - target: {fileID: 919132149155446097, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_Name
-      value: NeonesArcadeproves (1)
+      value: ArcadeUABblau
       objectReference: {fileID: 0}
     - target: {fileID: 8699224783455019111, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e105d797fe5e6af4380c4e13c689cfb2, type: 2}
+      objectReference: {fileID: 2100000, guid: 9da156278b05e4433ad80b816a6af32b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
 --- !u!4 &2125508817 stripped
@@ -18123,7 +18242,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -18183,7 +18302,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6e9598ba7ef14664e912b0025fcddc0a, type: 2}
     - target: {fileID: 919132149155446097, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_Name
-      value: NeonesArcadeproves
+      value: ArcadeUABvermell
       objectReference: {fileID: 0}
     - target: {fileID: 8699224783455019111, guid: 290184c65814be84eb0380f8f9094bd0, type: 3}
       propertyPath: m_Materials.Array.data[0]
