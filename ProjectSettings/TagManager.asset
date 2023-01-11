@@ -8,6 +8,7 @@ TagManager:
   - Key
   - tiempo
   - puntuacion
+  - saco
   layers:
   - Default
   - TransparentFX
