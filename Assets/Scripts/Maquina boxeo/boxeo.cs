@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -7,14 +6,14 @@ public class boxeo : MonoBehaviour
 {
     public TMP_Text record1;
     public TMP_Text record2;
-    private IEnumerator coroutine;
     private int puntuacion = 0;
+    public Rigidbody rb2;
+    private bool isPaused;
 
     // Start is called before the first frame update
     void Start()
     {
-        record1.text = puntuacion.ToString(); 
-
+        record1.text = "0";
         record2.text = "0";
     }
 
@@ -22,6 +21,7 @@ public class boxeo : MonoBehaviour
     void Update()
     {
         record1.text = puntuacion.ToString();
+        record2.text = puntuacion.ToString();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,22 +33,26 @@ public class boxeo : MonoBehaviour
             {
                 Vector3 velocity = rb.velocity;
                 float speed = velocity.magnitude;
-                float score = Mathf.Clamp01(speed / 5f) * 999f;
+                float score = Mathf.Clamp01(speed / 10f) * 999f;
                 Debug.Log("Velocity: " + speed + " m/s");
-                for (int i = 0; i <= score; i++)
-                {
-                    puntuacion = i;
-                    Debug.Log("Score: " + i + " points");
-                    coroutine = Timer();
-                    StartCoroutine(coroutine);
-                }
-                
+                puntuacion = (int)score;
+                Debug.Log("Score: " + puntuacion + " points");
+                PauseHingeJoint();
+                StartCoroutine(ResumeHingeJoint());
             }
         }
     }
 
-    IEnumerator Timer()
+    private void PauseHingeJoint()
     {
-        yield return new WaitForSeconds(1);
+        isPaused = true;
+        rb2.isKinematic = true;
+    }
+
+    private IEnumerator ResumeHingeJoint()
+    {
+        yield return new WaitForSeconds(3);
+        isPaused = false;
+        rb2.isKinematic = false;
     }
 }
