@@ -99,6 +99,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTime: 60
   openTrigger: 0
+  tiempoUI: {fileID: 0}
+  puntuacionUI: {fileID: 0}
+  tiempo: 60
 --- !u!136 &1883583504
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -290,7 +293,6 @@ GameObject:
   - component: {fileID: 543450651818194842}
   - component: {fileID: 3469287837749016639}
   - component: {fileID: 1711813854826859765}
-  - component: {fileID: 3469287837749016641}
   - component: {fileID: 3469287837749016640}
   - component: {fileID: 3469287837749016643}
   - component: {fileID: 3469287837749016642}
@@ -366,20 +368,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3469287837749016641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132147814739232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f01e3cc515a50ad696c23ea6e9b2034, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTime: 60
-  openTrigger: 0
 --- !u!135 &3469287837749016640
 SphereCollider:
   m_ObjectHideFlags: 0

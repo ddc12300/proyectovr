@@ -9,6 +9,8 @@ TagManager:
   - tiempo
   - puntuacion
   - saco
+  - pelota
+  - mano
   layers:
   - Default
   - TransparentFX
