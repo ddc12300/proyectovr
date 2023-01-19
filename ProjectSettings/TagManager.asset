@@ -17,6 +17,7 @@ TagManager:
   - WhacMachine
   - Hamster
   - Bolas
+  - bola
   layers:
   - Default
   - TransparentFX

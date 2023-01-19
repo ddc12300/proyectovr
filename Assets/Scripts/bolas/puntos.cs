@@ -19,10 +19,13 @@ public class puntos : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        GameObject otherObject = GameObject.FindGameObjectWithTag("Bolas");
-        SpawnObjects script = otherObject.GetComponent<SpawnObjects>();
-        script.Trigger();
-        Destroy(other.gameObject, 1f);
+        if (other.tag == "bola")
+        {
+            GameObject otherObject = GameObject.FindGameObjectWithTag("Bolas");
+            SpawnObjects script = otherObject.GetComponent<SpawnObjects>();
+            script.Trigger(cantidadpuntos);
+            Destroy(other.gameObject, 1f);
+        }
     }
 
 

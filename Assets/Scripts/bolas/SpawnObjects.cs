@@ -1,5 +1,7 @@
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
 
 public class SpawnObjects : MonoBehaviour
 {
@@ -7,18 +9,44 @@ public class SpawnObjects : MonoBehaviour
     public GameObject container;
     public Vector3 localPosition;
     public int count;
-    public int contadorbolas = 15;
     private int currentCount = 0;
-    public int puntuacion = 0;
+    public int contadorbolas = 60;
+    private int puntuacion = 0;
+    public TMP_Text tiempoUI;
+    public TMP_Text puntuacionUI;
+
+    public string tiempo;
+
+    void Update()
+    {
+
+        tiempo = contadorbolas.ToString();
+
+        tiempoUI.text = tiempo;
+
+        puntuacionUI.text = puntuacion.ToString();
+
+    }
+
 
     void Start()
     {
+        tiempoUI.text = contadorbolas.ToString();
+
+        puntuacionUI.text = puntuacion.ToString();
+
         StartCoroutine(SpawnCoroutine());
     }
 
-    public void Trigger()
+    public void Trigger(int puntos)
     {
-        StartCoroutine(SpawnCoroutine2());
+        if (contadorbolas > 0)
+        {
+            puntuacion = puntuacion + puntos;
+            StartCoroutine(SpawnCoroutine2());
+            contadorbolas--;
+        }
+
     }
 
     IEnumerator SpawnCoroutine()
@@ -43,9 +71,9 @@ public class SpawnObjects : MonoBehaviour
     public void Spawn2()
     {
 
-            GameObject newObject = Instantiate(prefab, container.transform.TransformPoint(localPosition), Quaternion.identity);
-            newObject.transform.parent = container.transform;
-   
+        GameObject newObject = Instantiate(prefab, container.transform.TransformPoint(localPosition), Quaternion.identity);
+        newObject.transform.parent = container.transform;
+
     }
 
     IEnumerator SpawnCoroutine2()
@@ -53,4 +81,5 @@ public class SpawnObjects : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Spawn2();
     }
+
 }
