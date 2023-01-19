@@ -22627,6 +22627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DownMachine
       objectReference: {fileID: 0}
+    - target: {fileID: 3749775796336868079, guid: 4268841104c5a964db7e6764e99d6809, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6217110423483835197, guid: 4268841104c5a964db7e6764e99d6809, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -26829,6 +26833,7 @@ GameObject:
   - component: {fileID: 644178849008356657}
   - component: {fileID: 644178849008356670}
   - component: {fileID: 242230376}
+  - component: {fileID: 644178849008356672}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: mano
@@ -27031,6 +27036,18 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &644178849008356672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644178849008356664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456251e7c0719964ba6a3912559bee30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &644178849010551456
 Transform:
   m_ObjectHideFlags: 0
