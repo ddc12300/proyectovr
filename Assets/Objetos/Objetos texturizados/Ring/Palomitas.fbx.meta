@@ -1,54 +1,9 @@
 fileFormatVersion: 2
-guid: e8a6e2ac32241c94fb938dba412f0f96
+guid: 5a1ab5ac8f192764c97e9ae7b8b61093
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BrazosAmarillos
-    second: {fileID: 2100000, guid: 30b5e33d68827e245bbff46091072a18, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BrazosMetal
-    second: {fileID: 2100000, guid: 74ba749e23ecdb045bdd2d736e70ed17, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: FrontalPrime
-    second: {fileID: 2100000, guid: 7ac2782eab5c2954ca335a261b57a9c5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: FrontalSuperior
-    second: {fileID: 2100000, guid: eefe583549eab7a4683391296b08c057, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Maquina
-    second: {fileID: 2100000, guid: 9332e8b23c3b1d740b7b077232543e90, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Neones
-    second: {fileID: 2100000, guid: 60ddff16fee4eb34aa311ed46b3fbc7c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ROJO
-    second: {fileID: 2100000, guid: adda7aca9c2b5ae40bfbbea3236e4f41, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: RampaSuperior
-    second: {fileID: 2100000, guid: 29f2c547688d9db449a4cd476a9bacd2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: RampaVerde
-    second: {fileID: 2100000, guid: e7968600282ec2341899a0990ff8f732, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
