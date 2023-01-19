@@ -5503,6 +5503,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &520183916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3498027909743906281, guid: ad8261c612526437288a9a6a06da2d11, type: 3}
+  m_PrefabInstance: {fileID: 1401455918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &520183918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520183916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &522512623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7700,6 +7718,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680265069}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &686057432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2217112556539727544, guid: ad8261c612526437288a9a6a06da2d11, type: 3}
+  m_PrefabInstance: {fileID: 1401455918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &686057436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686057432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019999998, y: 0.020000001, z: 9.3490805e-17}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &691840473
 GameObject:
   m_ObjectHideFlags: 0
@@ -11191,7 +11227,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.015686275}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.007843138}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -11835,7 +11871,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 150
+      scalar: 240
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -14698,7 +14734,7 @@ ParticleSystem:
     m_EnergyLossOnCollision:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.4
+      scalar: 0.5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -14754,7 +14790,7 @@ ParticleSystem:
     collidesWith:
       serializedVersion: 2
       m_Bits: 4294967295
-    maxCollisionShapes: 256
+    maxCollisionShapes: 254
     quality: 0
     voxelSize: 0.5
     collisionMessages: 0
@@ -20183,27 +20219,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.103
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7565222805196492496, guid: ad8261c612526437288a9a6a06da2d11, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad8261c612526437288a9a6a06da2d11, type: 3}
---- !u!1 &1401455919 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7359958363752017168, guid: ad8261c612526437288a9a6a06da2d11, type: 3}
-  m_PrefabInstance: {fileID: 1401455918}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1401455920
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401455919}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &1432352923
 GameObject:
   m_ObjectHideFlags: 0
