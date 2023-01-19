@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94649d862cd71ad44a7e42ea96a9d88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posZUp: 0.04
+  posZUp: 0.035
   posZDown: 0.03
   points: 10
   sphereCollider: {fileID: 5580832921264161765}
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94649d862cd71ad44a7e42ea96a9d88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posZUp: 0.04
+  posZUp: 0.035
   posZDown: 0.03
   points: 10
   sphereCollider: {fileID: 5580832921274560602}
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94649d862cd71ad44a7e42ea96a9d88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posZUp: 0.04
+  posZUp: 0.035
   posZDown: 0.03
   points: 10
   sphereCollider: {fileID: 5580832921309217155}
@@ -1040,7 +1040,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textScore: {fileID: 5580832921890427129}
-  pointsPerHamster: 10
   score: 0
 --- !u!135 &5580832921856670457
 SphereCollider:
@@ -1287,7 +1286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94649d862cd71ad44a7e42ea96a9d88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posZUp: 0.04
+  posZUp: 0.035
   posZDown: 0.03
   points: 10
   sphereCollider: {fileID: 5580832922233730983}
@@ -1402,7 +1401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94649d862cd71ad44a7e42ea96a9d88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posZUp: 0.04
+  posZUp: 0.035
   posZDown: 0.03
   points: 10
   sphereCollider: {fileID: 5580832922516656497}
