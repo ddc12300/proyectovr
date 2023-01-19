@@ -8,6 +8,7 @@ public class STACKER : MonoBehaviour
     public Vector3 localPosition;
     public int count;
     private int currentCount = 0;
+    private float offset = 1f;
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class STACKER : MonoBehaviour
     {
         if (currentCount < count)
         {
-            GameObject newObject = Instantiate(prefab, container.transform.TransformPoint(localPosition), Quaternion.identity, container.transform);
+            GameObject newObject = Instantiate(prefab, container.transform.TransformPoint(localPosition + new Vector3(offset * currentCount, 0, 0)), Quaternion.identity);
             newObject.transform.localPosition = localPosition;
             newObject.transform.parent = container.transform;
             currentCount++;

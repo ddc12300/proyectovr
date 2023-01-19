@@ -11,6 +11,12 @@ TagManager:
   - saco
   - pelota
   - mano
+  - ClownMachine
+  - InsideClown
+  - Clown
+  - WhacMachine
+  - Hamster
+  - Bolas
   layers:
   - Default
   - TransparentFX
