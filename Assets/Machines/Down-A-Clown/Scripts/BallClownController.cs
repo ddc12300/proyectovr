@@ -8,6 +8,11 @@ public class BallClownController : MonoBehaviour
 
     public Transform spawner;
 
+    private void Start(){
+
+        MachineEventsManager.FinishClownParty += ReturnSpawnerPosition;
+    }
+
     [SerializeField] float timeToReturn;
     private void OnTriggerEnter(Collider other)
     {

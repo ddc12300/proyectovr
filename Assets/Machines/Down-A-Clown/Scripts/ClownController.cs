@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClownController : MonoBehaviour
 {
-    [SerializeField] float rotXUp, rotXDown;
+    [SerializeField] float rotYUp, rotYDown;
     [SerializeField] int points;
     [SerializeField] CapsuleCollider capsuleCollider;
     public bool isUp;
@@ -12,14 +12,14 @@ public class ClownController : MonoBehaviour
     public void Up()
     {
         isUp = true;
-        transform.Rotate(rotXUp, 0, 0);
+        transform.Rotate(0, rotYUp, 0);
         capsuleCollider.enabled = true;
     }
 
     public void Down()
     {
         isUp = false;
-        transform.Rotate(rotXDown, 0, 0);
+        transform.Rotate(0, rotYDown, 0);
         capsuleCollider.enabled = false;
     }
 
