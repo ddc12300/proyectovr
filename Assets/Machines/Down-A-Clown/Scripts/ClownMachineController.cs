@@ -22,7 +22,7 @@ public class ClownMachineController : MonoBehaviour
     {
         actualTime ++;
         float timeLeft = timeParty - actualTime;
-        timer.text = "Timer: " + ((timeLeft <= 0) ? 0 : timeLeft);
+        timer.text = ((timeLeft <= 0) ? 0 : timeLeft).ToString();
         if (actualTime <= timeParty)
         {
             Invoke("Timer", 1);

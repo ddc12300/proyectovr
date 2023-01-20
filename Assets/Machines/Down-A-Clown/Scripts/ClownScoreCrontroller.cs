@@ -23,7 +23,7 @@ public class ClownScoreCrontroller : MonoBehaviour
     void StartParty()
     {
         score = 0;
-        textScore.text = "Score: " + score;
+        textScore.text = score.ToString();
     }
 
     public void BeatenClown(int points)
