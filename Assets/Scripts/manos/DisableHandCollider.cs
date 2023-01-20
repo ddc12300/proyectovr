@@ -8,36 +8,58 @@ public class DisableHandCollider : MonoBehaviour
     public Collider leftHandCollider;
     // Referencia al collider de la mano derecha
     public Collider rightHandCollider;
-    private IEnumerator coroutine;
+    public GameObject Player;
+    public bool check = true;
 
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
-        // Si el objeto con el que se ha colisionado no tiene el tag "pelota"
-        if (other.CompareTag("mano"))
+
+        if (check)
+        {
+            // Desactivar la propiedad "IsTrigger" del collider de la mano izquierda
+            leftHandCollider.isTrigger = true;
+            // Desactivar la propiedad "IsTrigger" del collider de la mano derecha
+            rightHandCollider.isTrigger = true;
+        }
+        else
         {
             // Desactivar la propiedad "IsTrigger" del collider de la mano izquierda
             leftHandCollider.isTrigger = false;
             // Desactivar la propiedad "IsTrigger" del collider de la mano derecha
             rightHandCollider.isTrigger = false;
         }
+
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        check = false;
+
+    }
+
+    void Start()
+    {
+        StartCoroutine(Wait());
+    }
+
 
     private void OnTriggerExit(Collider other)
     {
-        // Si el objeto con el que se ha colisionado no tiene el tag "pelota"
-        if (other.CompareTag("mano"))
-        {
-            coroutine = Timer();
-            StartCoroutine(coroutine);
-            // Desactivar la propiedad "IsTrigger" del collider de la mano izquierda
-            leftHandCollider.isTrigger = true;
-            // Desactivar la propiedad "IsTrigger" del collider de la mano derecha
-            rightHandCollider.isTrigger = true;
-        }
+        check = true;
+
+            
     }
 
-    IEnumerator Timer()
+
+
+    IEnumerator Wait()
     {
-        yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1f);
+            check = true;
+
     }
+
+
+
 }

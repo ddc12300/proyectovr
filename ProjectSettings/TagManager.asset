@@ -18,6 +18,7 @@ TagManager:
   - Hamster
   - Bolas
   - bola
+  - player
   layers:
   - Default
   - TransparentFX
