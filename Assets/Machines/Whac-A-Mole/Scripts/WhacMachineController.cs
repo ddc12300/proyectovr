@@ -22,7 +22,7 @@ public class WhacMachineController : MonoBehaviour
     {
         actualTime += timeToGetAHamster;
         float timeLeft = timeParty - actualTime;
-        timer.text = "Timer: " + ((timeLeft <= 0)?0:timeLeft);
+        timer.text = ((timeLeft <= 0)?0:timeLeft).ToString();
         if (actualTime <= timeParty)
         {
             InvokeHamsters();

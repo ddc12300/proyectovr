@@ -23,13 +23,13 @@ public class WhacScoreController : MonoBehaviour
     void StartParty()
     {
         score = 0;
-        textScore.text = "Score: " + score;
+        textScore.text = score.ToString();
     }
 
     public void BeatenHamster(int points)
     {
         score += points;
-        textScore.text = "Score: " + score;
+        textScore.text = score.ToString();
     }
 
 }
