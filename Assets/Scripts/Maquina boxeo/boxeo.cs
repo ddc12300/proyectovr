@@ -49,7 +49,7 @@ public class boxeo : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!isPaused)
+        if (!isPaused)
         {
             if (other.CompareTag("saco"))
             {
@@ -58,10 +58,23 @@ public class boxeo : MonoBehaviour
                 {
                     Vector3 velocity = rb.velocity;
                     float speed = Mathf.Clamp(velocity.magnitude, 0, maxSpeed);
-                    float score = Mathf.Clamp(speed / maxSpeed, 0, 1) * 999f;
-                    Debug.Log("Velocity: " + speed + " m/s");
-                    puntuacion = (int)score;
-                    Debug.Log("Score: " + puntuacion + " points");
+                    if (speed > 0 && speed <= maxSpeed)
+                    {
+                        float score = Mathf.Clamp(speed / maxSpeed, 0, 1) * 999f;
+                        Debug.Log("Velocity: " + speed + " m/s");
+                        if (score > 50 && score < 999)
+                        {
+                            puntuacion = (int)score;
+                            Debug.Log("Score: " + puntuacion + " points");
+                        }
+
+                    }
+                    else
+                    {
+                        Debug.Log("Velocidad no valida");
+                        puntuacion = 42;
+                        StartCoroutine(ResumeHingeJoint());
+                    }
                 }
             }
         }

@@ -13,6 +13,7 @@ public class ClownMachineController : MonoBehaviour
 
     public void StartParty()
     {
+        sphereCollider.enabled = false;
         ballClown.can = true;
         if (MachineEventsManager.StartClownParty != null) MachineEventsManager.StartClownParty();
         Invoke("Timer", 1);
