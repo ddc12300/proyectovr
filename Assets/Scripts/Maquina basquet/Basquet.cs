@@ -11,6 +11,7 @@ public class Basquet : MonoBehaviour
     public bool openTrigger = false;
     public TMP_Text tiempoUI;
     public TMP_Text puntuacionUI;
+    private bool cooldown = false;
 
     public string tiempo;
  
@@ -50,16 +51,21 @@ void Update(){
 
     private void OnTriggerEnter(Collider other)
     {
-    	    openTrigger = true;
-            puntuacion ++;
+        if (!cooldown)
+        {
+            openTrigger = true;
             coroutine = Timer();
             StartCoroutine(coroutine);
+            puntuacion++;
+            cooldown = true;
+        }
     }
 
 
     IEnumerator Timer()
-        {
-            yield return new WaitForSeconds(1);
-        }
+    {
+        yield return new WaitForSeconds(1);
+        cooldown = false;
+    }
 
 }
