@@ -10,6 +10,9 @@ public class DisableHandCollider : MonoBehaviour
     public Collider rightHandCollider;
     public GameObject Player;
     public bool check = true;
+    public GameObject objectToMove;
+    private Vector3 initialPosition;
+    public float moveAmount = 0.5f;
 
     void Update()
     {
@@ -20,6 +23,8 @@ public class DisableHandCollider : MonoBehaviour
             leftHandCollider.isTrigger = true;
             // Desactivar la propiedad "IsTrigger" del collider de la mano derecha
             rightHandCollider.isTrigger = true;
+
+            
         }
         else
         {
@@ -27,14 +32,23 @@ public class DisableHandCollider : MonoBehaviour
             leftHandCollider.isTrigger = false;
             // Desactivar la propiedad "IsTrigger" del collider de la mano derecha
             rightHandCollider.isTrigger = false;
+
+            
+
         }
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-
         check = false;
+        if (other.CompareTag("Player"))
+        {
+            initialPosition = objectToMove.transform.position;
+            objectToMove.transform.position = new Vector3(objectToMove.transform.position.x, objectToMove.transform.position.y + moveAmount, objectToMove.transform.position.z);
+        }
+
+        
 
     }
 
@@ -48,7 +62,10 @@ public class DisableHandCollider : MonoBehaviour
     {
         check = true;
 
-            
+        if (other.CompareTag("Player"))
+        {
+            objectToMove.transform.position = initialPosition;
+        }
     }
 
 
